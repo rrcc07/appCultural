@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="4dp">
+
+    <ImageView
+        android:id="@+id/imagen_evento"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="2dp"
+        android:background="@color/colorBlack"
+        android:scaleType="centerCrop"
+        android:src="@drawable/addimagenevento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/titulo_evento"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:hint="Titulo del evento"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textCursorDrawable="@color/colorBlack"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_usuario_evento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_evento" />
+
+    <EditText
+        android:id="@+id/detalle_evento"
+        android:layout_width="0dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="top"
+        android:hint="Detalles del evento"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textCursorDrawable="@color/colorBlack"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_usuario_evento"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/userphoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toEndOf="@+id/detalle_evento"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_evento"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ImageView
+        android:id="@+id/btn_subir_evento"
+        android:layout_width="54dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/circle_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detalle_evento"
+        app:srcCompat="@drawable/ic_publish_black" />
+
+    <Button
+        android:id="@+id/fecha_inicio_evento"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorBtn"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Inicio"
+        android:inputType="date"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_evento" />
+
+    <Button
+        android:id="@+id/fecha_final_evento"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorBtn"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Final"
+        android:inputType="date"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/fecha_inicio_evento"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_evento" />
+
+    <EditText
+        android:id="@+id/ubicacion_evento"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:hint="Direccion escrita"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textCursorDrawable="@color/colorBlack"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMapa1"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_evento"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/circle_style"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_subir_evento"
+        app:layout_constraintEnd_toEndOf="@+id/btn_subir_evento"
+        app:layout_constraintStart_toStartOf="@+id/btn_subir_evento"
+        app:layout_constraintTop_toTopOf="@+id/btn_subir_evento" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/circle_style"
+        android:padding="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_evento"
+        app:srcCompat="@drawable/ic_date_range_black" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/circle_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/ic_place_black" />
+
+    <Button
+        android:id="@+id/tiempo_inicio_evento"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorBtn"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="12:00"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/fecha_inicio_evento" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/circle_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fecha_inicio_evento"
+        app:srcCompat="@drawable/ic_access_time_black" />
+
+    <Button
+        android:id="@+id/tiempo_final_evento"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorBtn"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="15:00"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/tiempo_inicio_evento"
+        app:layout_constraintTop_toBottomOf="@+id/fecha_final_evento" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tiempo_final_evento"
+        app:layout_constraintTop_toBottomOf="@+id/fecha_final_evento" />
+
+    <Button
+        android:id="@+id/btnMapa1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorBtn"
+        android:gravity="center"
+        android:hint="Mapa"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorBlack"
+        android:gravity="center"
+        android:text="Añade direccion en el mapa y direccion escrita."
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefono" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/circle_style"
+        android:padding="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiempo_final_evento"
+        app:srcCompat="@drawable/ic_contact_phone_black_24dp" />
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:hint="Numero de telefono"
+        android:inputType="phone"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textColor="@color/colorBlack"
+        android:textCursorDrawable="@color/colorBlack"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/tiempo_final_evento" />
+
+    <ImageView
+        android:id="@+id/btnImagenYa"
+        android:layout_width="94dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagen_evento"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_evento"
+        app:srcCompat="@drawable/ic_touch_app_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btnFechaInicioYa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fecha_inicio_evento"
+        app:layout_constraintEnd_toEndOf="@+id/fecha_inicio_evento"
+        app:srcCompat="@drawable/ic_touch_app_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btnFechaFinYa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fecha_final_evento"
+        app:layout_constraintEnd_toEndOf="@+id/fecha_final_evento"
+        app:srcCompat="@drawable/ic_touch_app_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btnHoraInicioYa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tiempo_inicio_evento"
+        app:layout_constraintEnd_toEndOf="@+id/tiempo_inicio_evento"
+        app:srcCompat="@drawable/ic_touch_app_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btnHoraFinYa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tiempo_final_evento"
+        app:layout_constraintEnd_toEndOf="@+id/tiempo_final_evento"
+        app:srcCompat="@drawable/ic_touch_app_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btnMapaYa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMapa1"
+        app:layout_constraintEnd_toEndOf="@+id/btnMapa1"
+        app:srcCompat="@drawable/ic_touch_app_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMapaYa"
+        app:layout_constraintEnd_toEndOf="@+id/btnMapaYa"
+        app:layout_constraintStart_toStartOf="@+id/btnMapaYa"
+        app:layout_constraintTop_toTopOf="@+id/btnMapaYa"
+        app:srcCompat="@drawable/ic_done_black_24dp" />
+
+</android.support.constraint.ConstraintLayout>

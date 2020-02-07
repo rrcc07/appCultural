@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingBottom="4dp"
+    >
+
+    <ImageButton
+        android:id="@+id/imagen_evento1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:background="#E0E5FF"
+        android:padding="2dp"
+        android:layout_marginBottom="2dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#BEDAE4F7">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imagen_fecha_evento"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_date_range_black"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/texto_fechaIni_evento"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:hint="date - "
+                android:textColor="#2E2EFE"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="- al -"
+                android:textColor="#0F0F4D"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/texto_fechaFin_evento"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:hint="date - "
+                android:textColor="#2E2EFE"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imagen_tiempo_evento"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_access_time_black"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/texto_tiempoIni_evento"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:hint="time -"
+                android:textColor="#5151F8"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:text="- al - "
+                android:textColor="#0F0F4D"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/texto_tiempoFin_evento"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:hint="time - "
+                android:textColor="#5151F8"
+                android:textSize="15dp" />
+            <ImageView
+                android:id="@+id/imagen_categoria_evento"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_event_black" />
+            <TextView
+                android:id="@+id/text_categoria_evento"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="left"
+                android:textColor="#326834"
+                android:text="Categoria" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="8"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp">
+                    <TextView
+                        android:id="@+id/texto_titulo_evento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Titulo del evento"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/texto_ubicacion_evento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Direccion del evento"
+                        android:textColor="#9F000000"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:layout_weight="0.1">
+
+                <Button
+                    android:id="@+id/btnVerMas"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="#BE6197B1"
+                    android:text="VER MAS"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#2C3A8D"
+                    android:textSize="13sp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imagen_usuario_evento"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:paddingLeft="4dp"
+                    android:src="@drawable/userphoto" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#3C93BE"
+        android:layout_gravity="bottom"/>
+</LinearLayout>

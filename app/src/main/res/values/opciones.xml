@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combo_dias">
+        <item>*Categorias*</item>
+        <item>Artesania</item>
+        <item>Cine</item>
+        <item>Comida</item>
+        <item>Danza</item>
+        <item>Deportes</item>
+        <item>Ferias</item>
+        <item>Fiestas</item>
+        <item>Literatura</item>
+        <item>Musica</item>
+        <item>Pintura</item>
+        <item>Teatro</item>
+        <item>Tecnologia</item>
+        <item>Viajes</item>
+        <item>Educacion</item>
+        <item>Juegos</item>
+    </string-array>
+</resources>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:context=".eventoActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagenEvento"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:background="#D9E1E7"
+            android:padding="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/editNum"
+            android:layout_width="71dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:background="#BE6197B1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="23"
+            android:textStyle="bold"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editMes" />
+
+        <TextView
+            android:id="@+id/editMes"
+            android:layout_width="71dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:background="#BE6197B1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="AGO"
+            android:textStyle="bold"
+            android:inputType="date"
+            android:textColor="#4E576D"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenEvento" />
+
+        <TextView
+            android:id="@+id/tituloEvento"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#BE76B6D5"
+            android:paddingLeft="8dp"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editMes"
+            app:layout_constraintTop_toBottomOf="@+id/imagenEvento" />
+
+        <TextView
+            android:id="@+id/categoria"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="#BE7EC5E7"
+            android:paddingLeft="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editNum"
+            app:layout_constraintTop_toBottomOf="@+id/tituloEvento" />
+
+        <ImageView
+            android:id="@+id/imagenTime"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNum"
+            app:srcCompat="@drawable/ic_access_time_black" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#BE8FC5DF"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/imagenTime"
+            app:layout_constraintTop_toBottomOf="@+id/editNum" />
+
+        <TextView
+            android:id="@+id/telefonoPropietario"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#BE8FC5DF"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="contactos:"
+            app:layout_constraintStart_toEndOf="@+id/contacto"
+            app:layout_constraintTop_toBottomOf="@+id/editNum" />
+
+        <ImageView
+            android:id="@+id/imageDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenTime"
+            app:srcCompat="@drawable/ic_date_range_black" />
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#BE9BC7DD"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageDate"
+            app:layout_constraintTop_toBottomOf="@+id/imagenTime" />
+
+        <ImageView
+            android:id="@+id/imagenPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageDate"
+            app:srcCompat="@drawable/ic_place_black" />
+
+        <TextView
+            android:id="@+id/textPlace"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#BE96C6DD"
+            android:paddingLeft="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/btnMapa"
+            app:layout_constraintStart_toEndOf="@+id/imagenPlace"
+            app:layout_constraintTop_toBottomOf="@+id/imageDate" />
+
+        <TextView
+            android:id="@+id/textDetalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#BEB7DAEB"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:text="Detalle" />
+
+        <TextView
+            android:id="@+id/editDetalle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDetalle" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#BEB7DAEB"
+            android:text="Detalles del evento:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenPlace" />
+
+        <Button
+            android:id="@+id/btnMapa"
+            android:layout_width="86dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorUno"
+            android:text="ver Mapa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageDate" />
+
+        <TextView
+            android:id="@+id/nameOrganizador"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="#BE227DA8"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/editDetalle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDetalle" />
+
+        <TextView
+            android:id="@+id/correoOrgaizador"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#BE227DA8"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/editDetalle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDetalle" />
+
+        <Button
+            android:id="@+id/eliminarEvento"
+            android:layout_width="139dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorUno"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Eliminar evento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/correoOrgaizador" />
+
+        <ImageView
+            android:id="@+id/contacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/textTime"
+            app:layout_constraintTop_toBottomOf="@+id/editNum"
+            app:srcCompat="@drawable/ic_contact_phone_black_24dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

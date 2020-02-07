@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "630600275755",
+    "firebase_url": "https://appcultural20-d5b49.firebaseio.com",
+    "project_id": "appcultural20-d5b49",
+    "storage_bucket": "appcultural20-d5b49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630600275755:android:164ee59b11306032",
+        "android_client_info": {
+          "package_name": "com.rrcc.appcultural20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630600275755-7o7ohs7cghd663fla38r9glrc0tlhcd1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmOTBazR1At1U7F_FZVrXcrsu5ZX2FdDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630600275755-7o7ohs7cghd663fla38r9glrc0tlhcd1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

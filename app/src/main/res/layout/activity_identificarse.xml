@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdentificarseActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradiente">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.4">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="60dp"
+            android:padding="8dp"
+            android:src="@drawable/cultura1" />
+        <TextView
+            android:id="@+id/titleIdentificarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="appCultural"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.6">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textEmail"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textIsSelectable="false" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textPassword"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <ProgressBar
+            android:id="@+id/ideProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/btnIdentificarse"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reg_style_btn"
+            android:layout_gravity="center"
+            android:text="Ingresar"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿No tienes cuenta?, "
+                android:textColor="@color/colorWhite"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/btnCrearCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crea una aqui"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
